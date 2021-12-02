@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <title>Formulario de Aderência | Cristal </title>
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="header">
+      <div class="img-bg">
+        <img class="logo-cristal" src="img/logo-curta.png" alt="Cristal">
+      </div>
+      <nav>
+        <ul class="header-menu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Login</a>
+          </li>
+          <li>
+            <a href="#">Quem somos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-bg">
+    <div class="main">
+      <div class="cristal-bg">
+        <img class="logo-cristal-2" src="img/logo cristal.png" alt="Cristal">
+      </div>
+
+      <section class="main-formulario">
+        <h1>Calcular Aderência<span>.</span></h1>
+        <section class="forms">
+
+          <div class="col-2 ">
+            <label for="nome">Nome<span>:</span></label>
+            <input class="barra" type="text" id="nome" name="nome" placeholder="Seu Nome">
+          </div>
+
+          <div class="col-2 ">
+            <label for="idade">Idade<span>:</span></label>
+            <input class="barra" type="text" id="idade" name="idade" placeholder="Sua Idade">
+          </div>
+
+          <div class="col-2 ">
+            <label for="email">Email<span>:</span></label>
+            <input class="barra" type="text" id="email" name="email" placeholder="ex: cristalacademy@gmail.com">
+          </div>
+
+          <div>
+            <p>Você Trabalha<span>?</span></p>
+            <input class="radio" type="radio" name="trabalho" value="0" id="trabalho">
+            <label for="trabalho">Sim</label>
+
+            <input class="radio" type="radio" name="trabalho" value="10" id="trabalho">
+            <label for="trabalho">Não</label>
+          </div>
+
+          <div>
+            <p>Você Estuda<span>?</span></p>
+            <input class="radio" type="radio" name="estudo" value="0" id="estudo">
+            <label for="estudo">Sim</label>
+
+            <input class="radio" type="radio" name="estudo" value="10" id="estudo">
+            <label for="estudo">Não</label>
+          </div>
+
+          <div>
+            <label for="prova">Nota da Prova<span>:</span></label>
+            <input class="barra" type="number" id="prova" name="prova" max="10" placeholder="Ex: 08">
+          </div>
+
+          <div>
+            <label for="entrevista">Nota da Entrevista<span>:</span></label>
+            <input class="barra" type="number" id="entrevista" name="entrevista" max="10" placeholder="Ex: 08">
+          </div>
+
+          <div class="col-2">
+            <label for="renda">Renda Familiar<span>:</span></label>
+            <select class="barra-select" id="renda" name="select">
+              <option selected>Selecione</option>
+              <option value="60">0 á R$ 1200,00</option>
+              <option value="50">R$ 1200,00 á R$ 2000,00</option>
+              <option value="40">R$ 2000,00 á R$ 3000,00</option>
+              <option value="35">R$ 3000,00 á R$ 4000,00</option>
+              <option value="25">R$ 4000,00 á R$ 6000,00</option>
+              <option value="0">Mais de R$ 6000,00</option>
+            </select>
+          </div>
+          <div id="res"></div>
+          <div class="col-2-botao">
+            <button onclick="cliqueiNoBotao()" class="botao">Calcular Aderência</button>
+          </div>
+
+        </section>
+      </section>
+    </div>
+  </main>
+  <footer class="footer-bg">
+    <div class="footer">
+      <div class="bg-logo">
+        <img class="logo-cristal" src="img/logo-curta.png" alt="Cristal">
+        <div class="p">
+          <p>Lapidando joias.</p>
+          <p> O brilho vem de você!</p>
+        </div>
+      </div>
+      <div>
+        <ul class="footer-contato">
+          <li class="email"><a href="mailto:cristalacademysdg@gmail.com?subject=Interesse em contato">cristalacademysdg@gmail.com</a></li>
+          <li class="tel"><a href="tel:">+5511999999999</a></li>
+        </ul>
+        <ul class="footer-sociais">
+          <li class="instagram">
+            <a href="https://www.instagram.com/gds.cristalacademy/" target=" _blank"><img src="img/instagram.svg" alt="Facebook" class="redes-sociais"></a>
+          </li>
+          <li class="Facebook">
+            <a href="https://www.facebook.com/CristalAcademyOficial" target=" _blank"><img src="img/facebook.svg" alt="Facebook" class="redes-sociais"></a>
+          </li>
+          <li class="Facebook">
+            <a href="https://www.linkedin.com/company/cristal-academy/" target=" _blank"><img src="img/linkdin.svg" alt="Linkedin" class="redes-sociais"></a>
+          </li>
+          <li class="Facebook">
+            <a href="https://www.tiktok.com/@cristalacademysdg" target=" _blank"><img src="img/tiktok.svg" alt="TikTok" class="redes-sociais"></a>
+          </li>
+          <li class="Facebook">
+            <a href="https://www.youtube.com/channel/UCUQUi6EgOa24PhENqI-1iqw" target=" _blank"><img src="img/youtube.svg" alt="YouTube" class="redes-sociais"></a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer-copy">2021. Cristal Academy - Alguns Direitos Reservados</p>
+
+  </footer>
+  <script>
+    function cliqueiNoBotao() {
+      var trabalho = document.querySelector('input[name="trabalho"]:checked').value;
+      var estudo = document.querySelector('input[name="estudo"]:checked').value;
+      var prova = document.getElementById('prova').value;
+      var entrevista = document.getElementById('entrevista').value;
+      var opcao = document.getElementById('renda').value;
+      var res = document.getElementById('res')
+
+      var resultado = parseInt(trabalho) + parseInt(prova) + parseInt(estudo) + parseInt(entrevista) + parseInt(opcao);
+      res.innerHTML = `<p>Resultado dos Pontos<span>:</span> ${resultado}%</p>`
+
+
+      // console.log('se nao trabalha: ' + trabalho, 'se nao estuda: ' + estudo, 'nota da prova: ' + prova, 'nota da entrevista: ' + entrevista, 'valor da renda: ' + opcao);
+    }
+  </script>
+
+</body>
+
+</html>

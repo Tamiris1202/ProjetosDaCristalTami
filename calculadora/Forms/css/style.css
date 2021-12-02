@@ -1,0 +1,11 @@
+/* Estilizando o Header */
+@import url("./header.css");
+@import url("./content.css");
+@import url("./footer.css");
+body {
+  margin: 0px;
+  background: #d1d1d1;
+}
+ul {
+  list-style: none;
+}

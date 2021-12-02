@@ -1,0 +1,159 @@
+/* esttilizando o main */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 40px;
+  gap: 120px;
+}
+.cristal-bg {
+  max-width: 450px;
+}
+.logo-cristal-2 {
+  max-width: 100%;
+}
+
+/* estilizando o forms */
+h1 {
+  text-align: center;
+  font: 600 2rem "Poppins";
+  margin: 0px;
+}
+h1 span {
+  font-size: 2.5rem;
+  color: #fa2904;
+  font-weight: 600;
+}
+.forms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 60px;
+}
+.col-2 {
+  grid-column: 1/-1;
+}
+.main-formulario {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 6px 8px 14px 0px rgb(141, 141, 141);
+  position: relative;
+}
+label,
+p {
+  font-size: 1.3rem;
+  font-family: "Poppins";
+  font-weight: 600;
+  margin: 0;
+}
+#res {
+  grid-column: 1/-1;
+}
+.forms span {
+  font-size: 1.8rem;
+  color: #fa2904;
+  font-weight: 600;
+}
+.barra {
+  width: 40%;
+  height: 35px;
+  font-size: 1rem;
+  font-family: "Poppins";
+}
+.radio {
+  height: 20px;
+  width: 20px;
+}
+.barra-select {
+  width: 50%;
+  height: 35px;
+  font-size: 1rem;
+}
+
+.forms input[type="text"]:focus,
+.forms input[type="email"]:focus,
+.forms input[type="number"]:focus,
+.forms select:focus {
+  outline: none;
+  border-color: #a12914;
+  box-shadow: 0 0 0 2px rgb(255, 255, 255);
+  border-radius: 5px;
+}
+.col-2-botao {
+  grid-column: 1/-1;
+  display: grid;
+  margin-top: 10px;
+}
+.botao {
+  width: 200px;
+  height: auto;
+  font-size: 1.4rem;
+  background-color: white;
+  border-radius: 5px;
+  border: solid 2px #040433;
+  justify-self: center;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 6px 8px 14px 0px rgb(199, 199, 199);
+}
+.botao:hover {
+  background-color: #100a35;
+  color: white;
+}
+@media (max-width: 1130px) {
+  label,
+  p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 960px) {
+  .header-menu a {
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .forms {
+    gap: 20px;
+  }
+  p {
+    line-height: 1;
+  }
+}
+@media (max-width: 900px) {
+  .main {
+    gap: 20px;
+    padding: 80px 20px;
+  }
+  .cristal-bg {
+    max-width: 200px;
+    padding-bottom: 300px;
+  }
+}
+@media (max-width: 760px) {
+  .cristal-bg {
+    max-width: 80px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+  }
+  .main {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    padding-top: 0px;
+  }
+  .cristal-bg {
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 470px) {
+  .main-formulario {
+    padding: 20px;
+  }
+  .forms {
+    gap: 10px 15px;
+    grid-template-columns: 1fr;
+  }
+}
