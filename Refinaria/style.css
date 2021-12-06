@@ -2,3 +2,11 @@
 @import url(css/footer.css);
 @import url(css/header.css);
 @import url(css/deifnicao.css);
+@import url(css/cards.css);
+@import url(css/scroll.css);
+@import url(css/background.css);
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+}

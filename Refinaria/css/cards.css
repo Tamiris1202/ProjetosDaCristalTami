@@ -1,0 +1,129 @@
+section {
+  font-family: "Poppins";
+}
+.card-bg {
+  background-color: #010116;
+}
+.before-card {
+  color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 80%;
+  position: relative;
+  margin: 30px 0px;
+}
+.card ul li .text-card p {
+  padding: 25px;
+  margin: 0px;
+  background-color: rgba(103, 98, 117, 0.3);
+  backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom: solid 1px white;
+  border-left: solid 1px white;
+  border-right: solid 1px white;
+}
+.data {
+  margin: 0 25px;
+  max-width: max-content;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.card-posicao h2 {
+  margin: 0;
+  padding: 10px 25px;
+  background: rgb(224, 96, 45);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top: solid 1px white;
+  border-left: solid 1px white;
+  border-right: solid 1px white;
+  border-bottom: solid 2px black;
+}
+.card-posicao {
+  margin: 25px;
+  position: relative;
+}
+.data::before {
+  content: "";
+  width: 90%;
+  height: 5px;
+  position: absolute;
+  background: linear-gradient(
+    270.02deg,
+    rgba(255, 61, 0, 0) 36.46%,
+    #ff3d00 97.38%
+  );
+  box-sizing: border-box;
+  left: 100px;
+  top: 10px;
+  border-radius: 12px;
+}
+ul::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background: white;
+}
+
+@media (min-width: 700px) {
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(
+      359.95deg,
+      #2400ff -14.5%,
+      #42ff00 48.25%,
+      #fff500 72.86%,
+      #ff0000 145.47%
+    );
+  }
+  
+  .card ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .data::before {
+    display: none;
+  }
+  .card ul li:nth-child(even) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+  }
+  .card ul li:nth-child(odd) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+  }
+  .card ul li:before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    top: 0px;
+    box-shadow: -2px 0px 0 13px #010116;
+  }
+  .card ul li:nth-child(even)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .card ul li:nth-child(odd)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+}

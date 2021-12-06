@@ -4,6 +4,7 @@ body {
   margin: 0px;
   background: #e4e2e2;
 }
+
 .home {
   position: relative;
 }
@@ -29,6 +30,7 @@ body {
 }
 .imagem2-bg {
   max-width: 500px;
+  text-align: center;
 }
 .texto-main {
   padding: 0px 20px 95px 10px;

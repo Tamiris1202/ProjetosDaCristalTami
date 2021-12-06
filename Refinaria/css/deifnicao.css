@@ -44,10 +44,11 @@
 .subtitulo {
   height: auto;
   max-width: 1200px;
+  min-width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin: 80px auto;
+  margin: 0 auto;
 }
 .subtitulo h2 {
   grid-column: 1/-1;
