@@ -20,23 +20,71 @@ body {
   gap: 20px;
   box-sizing: border-box;
 }
-.imagem2-bg img {
+.imagem2-bg {
   height: 100%;
   width: 100%;
+  background-color: #010116;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 0px 8px 20px 0px rgb(90, 90, 90);
-  display: inline-block;
 }
-.imagem2-bg {
-  max-width: 500px;
+
+.texto-img {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.img-cristal-logo img {
+  max-width: 180px;
+  margin-top: 20px;
+}
+.preco h3 {
+  color: white;
+  font-family: "Poppins";
+  font-size: 1.8rem;
+  justify-self: center;
   text-align: center;
+  margin: 0;
 }
+.preco {
+  margin: 50px 0px;
+}
+.preco h3 span {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.preco p {
+  color: white;
+  font-family: "Poppins";
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 15px 20px;
+  margin-top: 15px;
+}
+.link-form a {
+  text-decoration: none;
+  color: white;
+  background-color: #010116;
+  padding: 20px 50px;
+  border: white solid 2px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-family: "Poppins";
+  transition: 0.4s;
+}
+.link-form a:hover {
+  background-color: rgb(212, 68, 15);
+  color: black;
+  border: solid 2px white;
+  cursor: pointer;
+}
+
 .texto-main {
-  padding: 0px 20px 95px 10px;
+  padding: 0px 20px 95px 20px;
 }
 .texto-main h1 {
-  padding-top: 30px;
+  padding-top: 80px;
   margin: 0;
   font-size: 5rem;
   font-family: "Poppins";
@@ -92,8 +140,26 @@ span {
     box-shadow: inset 0 -140px #e4e2e2, inset 0 140px #e4e2e2;
     padding: 100px 25px;
   }
-  .imagem2-bg {
-    padding: 0px auto;
+  .link-form a {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    box-sizing: border-box;
+  }
+  .preco p {
+    margin-top: 0px;
+    padding: 0px;
+  }
+  .img {
+    height: 500px;
+  }
+}
+@media (max-width: 490px) {
+  .header-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header {
+    gap: 15px !important;
   }
 }
 
@@ -102,9 +168,16 @@ span {
     grid-template-columns: 1fr;
     box-shadow: inset 0 -220px #e4e2e2, inset 0 50px #e4e2e2;
   }
-  .imagem2-bg img {
+  .imagem2-bg {
     width: 100%;
-    height: 300px;
+    height: 500px;
+  }
+  .texto-img .preco {
+    max-width: max-content;
+    text-align: center;
+  }
+  .texto-img .preco p {
+    padding: 0;
   }
   .texto-main p {
     margin-bottom: 25px;
@@ -124,5 +197,20 @@ span {
   }
   span {
     font-size: 3rem;
+  }
+}
+@media (max-width: 350px) {
+  .img-cristal-logo img {
+    max-width: 150px;
+  }
+  .link-form a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .preco p {
+    font-size: 1.2rem;
+  }
+  .preco h3 {
+    font-size: 1.4rem;
   }
 }

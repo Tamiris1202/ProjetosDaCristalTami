@@ -51,6 +51,10 @@ section {
   border-left: solid 1px white;
   border-right: solid 1px white;
   border-bottom: solid 2px black;
+
+  background: -webkit-linear-gradient(#40ff30, #ffecec);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .card-posicao {
   margin: 25px;
@@ -58,7 +62,7 @@ section {
 }
 .data::before {
   content: "";
-  width: 90%;
+  width: 70%;
   height: 5px;
   position: absolute;
   background: linear-gradient(

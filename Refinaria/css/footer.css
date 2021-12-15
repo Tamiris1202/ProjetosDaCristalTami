@@ -71,9 +71,6 @@
   height: 45px;
   padding: 0px 0px;
 }
-.facebook:hover {
-  background: url(../img/facebook\ -\ branco.svg);
-}
 
 .footer-sociais {
   display: flex;
@@ -121,5 +118,36 @@
 @media (max-width: 380px) {
   .footer-contato li {
     font-size: 1rem !important;
+  }
+}
+@media (max-width: 320px) {
+  .footer-contato li {
+    font-size: 0.8rem !important;
+  }
+  .bg-logo {
+    max-width: 50%;
+    margin-bottom: 0px;
+  }
+  .bg-logo .p {
+    font-size: 0.8rem;
+    margin: 0px;
+  }
+  .footer-sociais .redes-sociais {
+    width: 23px;
+    height: 23px;
+  }
+  .footer {
+    gap: 20px;
+  }
+  .footer-sociais {
+    justify-content: start;
+    gap: 10px;
+  }
+  .footer-contato {
+    text-align: left;
+    font-size: 0.7rem;
+  }
+  .footer-copy {
+    font-size: 0.5rem;
   }
 }
